@@ -169,7 +169,7 @@ const Page = () => {
               alt="Promo"
               width={1440}
               height={220}
-              className="  shadow-lg"
+              className=" w-full shadow-lg"
             />
           </div>
     </div>

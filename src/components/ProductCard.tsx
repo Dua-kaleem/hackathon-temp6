@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Poppins } from 'next/font/google';
 
 
@@ -75,8 +76,8 @@ const ProductCard = ({
 
                   
                     <div className="flex items-center justify-center gap-1">
-                        <Image src={'/assets/compare.svg'} alt="compare" width={13} height={14} />
-                        <p className="font-semibold text-[16px]">Compare</p>
+                     <Link href={"/comparision"}>   <Image src={'/assets/compare.svg'} alt="compare" width={13} height={14} />
+                        <p className="font-semibold text-[16px]">Compare</p></Link>
                     </div>
 
                     
