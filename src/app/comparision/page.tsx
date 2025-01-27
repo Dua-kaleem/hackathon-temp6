@@ -6,13 +6,7 @@ import { HeroHeader } from "@/components/hero-header";
 import Image from "next/image";
 import React from "react";
 
-interface CartItem {
-  id: number;
-  name: string;
-  price: number;
-  quantity: number;
-  image: string;
-}
+
 
 const page = () => {
   return (
@@ -40,9 +34,11 @@ const page = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Product Cards */}
             <div className="bg-white shadow-md rounded-lg p-4">
-              <img
-                src="/path-to-image-1.jpg" // Replace with product image
+              <Image
+                src="/assets/Muggo.png" 
                 alt="Asgard Sofa"
+                width={100}
+                height={100}
                 className="rounded-lg w-full mb-4"
               />
               <h3 className="font-semibold text-lg">Asgard Sofa</h3>
@@ -50,9 +46,11 @@ const page = () => {
               <p className="text-yellow-500 text-sm mt-1">⭐⭐⭐⭐⭐ (4.7)</p>
             </div>
             <div className="bg-white shadow-md rounded-lg p-4">
-              <img
-                src="/path-to-image-2.jpg" // Replace with product image
+              <Image
+                src="/assets/sofa1.png" 
                 alt="Outdoor Sofa Set"
+                width={100}
+                height={900}
                 className="rounded-lg w-full mb-4"
               />
               <h3 className="font-semibold text-lg">Outdoor Sofa Set</h3>
